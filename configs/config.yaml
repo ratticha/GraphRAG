@@ -1,0 +1,43 @@
+# GraphRAG Project Configuration
+
+project:
+  name: "GraphRAG Context Retrieval"
+  seed: 42
+
+paths:
+  raw_data:       "data/raw"
+  processed_data: "data/processed"
+  outputs:        "data/outputs"
+  results:        "results"
+  figures:        "figures"
+
+wiki_vote:
+  url: "https://snap.stanford.edu/data/wiki-Vote.txt.gz"
+  filename: "wiki-Vote.txt"
+  test_ratio: 0.20
+
+hotpotqa:
+  url: "http://curtis.ml.cmu.edu/datasets/hotpot/hotpot_dev_distractor_v1.json"
+  filename: "hotpot_dev_distractor_v1.json"
+  max_records: 500
+
+heuristics:
+  katz_beta: 0.005
+  katz_depth: 5
+
+node2vec:
+  dimensions: 64
+  walk_length: 30
+  num_walks: 200
+  p: 1.0
+  q: 1.0
+  window: 10
+  score_method: "cosine"
+
+pagerank:
+  alpha: 0.85
+  max_iter: 200
+  tol: 1.0e-6
+
+evaluation:
+  k_values: [10, 20]

@@ -1,0 +1,34 @@
+# Data files (large raw downloads)
+data/raw/*.txt
+data/raw/*.gz
+data/raw/*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Virtual environments
+venv/
+env/
+.env/
+graphrag_env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# macOS
+.DS_Store
+
+# Node2Vec cache
+*.walks
